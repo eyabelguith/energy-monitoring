@@ -46,8 +46,8 @@ energy-monitoring/
 
 ## Planned Architecture
 
-![Project Architecture](docs/architecture.png)
-*Placeholder diagram showing data flow: Data → Preprocessing → Models → Evaluation → Dashboard*
+> **Planned data flow:**  
+Business Understanding → Data → Preprocessing → Models → Evaluation → Dashboard  
 
 ---
 

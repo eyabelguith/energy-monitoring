@@ -4,7 +4,19 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-green)](https://opensource.org/licenses/MIT) 
 [![Status](https://img.shields.io/badge/status-planning-orange)]()
 
-** AI system for renewable energy monitoring** that predicts energy demand, detects anomalies, evaluates system risk, and provides actionable recommendations to maintain grid stability.
+**AI system for monitoring renewable energy systems (with a focus on wind-driven grids)** that predicts energy demand, detects anomalies, evaluates system risk, and provides actionable recommendations to maintain grid stability.
+
+---
+
+## Problem Statement
+
+Renewable energy systems, particularly wind-based grids, are highly variable and difficult to manage. 
+Electricity demand must always match supply, but wind generation depends on weather conditions and can fluctuate rapidly.
+
+This creates challenges such as:
+- Grid instability when supply and demand are imbalanced
+- Difficulty in forecasting renewable generation
+- Undetected equipment or system failures
 
 ---
 
@@ -15,9 +27,19 @@ This project aims to create a production-ready AI solution for monitoring renewa
 1. **Prediction** – forecasting energy production and demand using historical and real-time data.  
 2. **Anomaly Detection** – identifying unusual patterns or system failures.  
 3. **Risk Evaluation** – quantifying potential system risks to prioritize maintenance or interventions.  
-4. **Recommendations** – suggesting optimal actions for grid stability and efficiency.
+4. **Recommendations** – suggesting optimal actions for grid stability and efficiency (generated based on risk levels and detected anomalies).
 
-> **Note:** This is an initial version. Placeholder datasets and scripts are included for project structure demonstration.
+> **Note:** This is an initial version.
+
+---
+
+## Business Impact
+
+This system can help:
+- Reduce downtime in renewable energy systems
+- Improve forecasting accuracy for grid operators
+- Detect failures early and reduce maintenance costs
+- Support decision making in energy distribution
 
 ---
 
@@ -71,22 +93,37 @@ python scripts/evaluate.py      # Evaluate model performance and generate report
 
 ---
 
-## Roadmap / Planned Features
+## Roadmap
 
-* Real-time energy prediction
-* Anomaly detection dashboard
-* Risk evaluation and reporting
-* Actionable recommendations for grid stability
-* Unit tests & CI/CD integration
+**Phase 1 – Data & Exploration**
+- Data collection and preprocessing
+- Exploratory data analysis
 
-> Even before scripts and models are implemented, this roadmap communicates the project’s full scope.
+**Phase 2 – Core Models**
+- Demand and wind forecasting models
+- Anomaly detection implementation
+
+**Phase 3 – Intelligence Layer**
+- Risk scoring system
+- Recommendation engine
+- Explainability (SHAP)
+
+**Phase 4 – Productization**
+- Dashboard development
+- Model monitoring (drift detection)
+- Deployment and testing
+
 
 ---
 
 ## Data Sources
 
-* Real-world renewable energy datasets (TBD)
-* Simulated datasets for testing and development (TBD)
+The system will integrate publicly available datasets, including:
+
+- Weather data (wind speed, temperature) from public APIs
+- Wind generation datasets (renewable energy production time series)
+
+> Initial development may use sample or simulated datasets before full integration.
 
 > **Note:** Raw data is stored locally in `data/raw/` and will not be uploaded to GitHub.
 
